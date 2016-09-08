@@ -1,0 +1,26 @@
+# ---------------------------------------
+# MapProxy example seeding configuration.
+# ---------------------------------------
+#
+# This is a minimal MapProxy seeding configuration.
+# See full_seed_example.yaml and the documentation for more options.
+#
+
+seeds:
+  myseed1:
+    caches: [s3_cache]
+    # grids: []
+    coverages: [bonn]
+    levels:
+      from: 12
+      to: 22
+
+cleanups:
+  myclean1:
+    caches: [gpkg_cache]
+
+coverages:
+    bonn:
+        bbox: [7.884191703010688, 65.74402365279614, 7.931678206832854, 65.75453374418535]
+        srs: 'EPSG:4326'
+
